@@ -1,17 +1,38 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <input-entrada @PassaX="Atri1" @PassaY="Atri2"></input-entrada>
+    <output-saida :SendX="this.x" :SendY="this.y"></output-saida>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Inputs from './components/Inputs.vue'
+import Outputs from './components/Outputs.vue'
 
 export default {
   name: 'app',
-  components: {
-    HelloWorld
+  components:{
+        'input-entrada': Inputs,
+        'output-saida': Outputs
+    },
+  data(){
+    return{
+      x: '',
+      y: ''
+    }
+  },
+  methods:{
+    numeros(){
+      alert('Ta funcionando!'); 
+      console.log('Ta funcionando');
+    },
+    Atri1(x1){
+      this.x = x1;
+    },
+    Atri2(y1){
+      this.y = y1;
+    }
   }
 }
 </script>
@@ -23,6 +44,8 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 60px; 
 }
+
+p{font-size: 2em;}
 </style>
