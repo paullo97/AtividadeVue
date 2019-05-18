@@ -1,8 +1,10 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <input-entrada @PassaX="Atri1" @PassaY="Atri2"></input-entrada>
-    <output-saida :SendX="this.x" :SendY="this.y"></output-saida>
+    <!-- <input-entrada @PassaX="Atri1" @PassaY="Atri2"></input-entrada>
+    <output-saida :SendX="this.x" :SendY="this.y"></output-saida> --> 
+    <input-entrada></input-entrada>
+    <output-saida></output-saida>
   </div>
 </template>
 
