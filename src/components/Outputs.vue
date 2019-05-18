@@ -3,9 +3,9 @@
         <!-- <p> Soma = {{1*SendX + 1*SendY}} </p>
         <p> Subitracao = {{SendX - SendY}} </p>
         <p> Multiplicacao = {{SendX * SendY}} </p> --> 
-        <p>{{soma}}</p>
-        <p>{{subtracao}}</p>
-        <p>{{multiplicacao}}</p>
+        <p> Soma -> {{soma}}</p>
+        <p>Subtracao -> {{subtracao}}</p>
+        <p>Multiplicacao -> {{multiplicacao}}</p>
     </div>
 </template>
 

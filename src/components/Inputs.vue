@@ -7,7 +7,7 @@
         <!-- <p>{{x1}} - {{y1}}</p> 
         <p>{{x1}} - {{y1}} = {{1*x1-1*y1}}</p> 
         <button v-on:click.stop="passarnumeros">Chamar $Emit</button> --> 
-        <input type="text" v-model="numero1"><br>
+        <input type="text" v-model="numero1"><br> <!-- Referenciar com as variaveis 'computed'--> 
         <input type="text" v-model="numero2"><br>
     </div>
 </template>

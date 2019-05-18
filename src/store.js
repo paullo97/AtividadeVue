@@ -13,7 +13,7 @@ export default new Vuex.Store({
       return state.numero1 * 1 + state.numero2 * 1
     },
     subtracao (state) {
-      return state.numero1 -state.numero2
+      return state.numero1 - state.numero2
     },
     multiplicacao: state => {
       return state.numero1 * state.numero2
